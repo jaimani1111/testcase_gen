@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Insurance Broker Portal - India's Premium Insurance Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#1B4E6B',
+                        'secondary': '#2A9D8F',
+                        'accent': '#E9C46A',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-primary">TravelSure</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-primary">Features</a>
+                    <a href="#coverage" class="text-gray-600 hover:text-primary">Coverage</a>
+                    <a href="#zones" class="text-gray-600 hover:text-primary">Risk Zones</a>
+                    <a href="login.html" class="bg-secondary text-white px-6 py-2 rounded-lg hover:bg-secondary/90 transition duration-300">
+                        Broker Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold text-gray-900 mb-6">
+                    Simplify Travel Insurance 
+                    <span class="text-primary">Quote Generation</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Generate accurate travel insurance quotes instantly. Cover all Indian cities with our comprehensive risk assessment system.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <button class="bg-primary text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-primary/90 transition duration-300">
+                        Start Generating Quotes
+                    </button>
+                    <button class="bg-secondary text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-secondary/90 transition duration-300">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Powerful Features for Insurance Brokers</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-calculator text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Instant Quote Generation</h3>
+                    <p class="text-gray-600">Calculate premiums instantly based on travel duration, destinations, and risk factors.</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-map-marked-alt text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Multi-City Coverage</h3>
+                    <p class="text-gray-600">Support for multiple destinations with automatic risk zone assessment.</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Customer Management</h3>
+                    <p class="text-gray-600">Efficiently manage customer profiles and track their insurance quotes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Section -->
+    <section id="coverage" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Comprehensive Coverage Options</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4 text-primary">Activities Covered</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Skydiving (+30% premium)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Scuba Diving (+20% premium)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Regular Tourism Activities</li>
+                        <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Adventure Sports</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4 text-primary">Special Considerations</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Age-based Premium Adjustment</li>
+                        <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Multi-City Trip Coverage</li>
+                        <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Group Travel Discounts</li>
+                        <li class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Extended Stay Options</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risk Zones Section -->
+    <section id="zones" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Understanding Risk Zones</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-green-50 rounded-xl border border-green-200">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-city text-green-600"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-lg">Zone 1 - Metro Cities</h4>
+                            <p class="text-green-600">₹500 per traveler</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">Major metropolitan areas with excellent healthcare and infrastructure.</p>
+                </div>
+                <div class="p-6 bg-yellow-50 rounded-xl border border-yellow-200">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-mountain text-yellow-600"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-lg">Zone 2 - Tourist Places</h4>
+                            <p class="text-yellow-600">₹700 per traveler</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">Popular tourist destinations with moderate risk factors.</p>
+                </div>
+                <div class="p-6 bg-red-50 rounded-xl border border-red-200">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-map-marked-alt text-red-600"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-lg">Zone 3 - Remote Areas</h4>
+                            <p class="text-red-600">₹1000 per traveler</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">Remote locations and areas with higher risk factors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">TravelSure</h3>
+                    <p class="text-gray-300">Your trusted partner in travel insurance solutions.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Features</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Coverage</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Risk Zones</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Documentation</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fas fa-envelope mr-2"></i> support@travelsure.com</li>
+                        <li class="flex items-center"><i class="fas fa-phone mr-2"></i> +91 1800-123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/20 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 TravelSure. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

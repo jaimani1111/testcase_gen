@@ -1,0 +1,590 @@
+Sl No.,Requirement ID,Test Case ID,Module,LOB,Region,Test Case Description,Execution Steps,Expected Result,Unnamed: 9,Unnamed: 10,Unnamed: 11
+1,REQ_1,TC_1,Policy Issuance,Auto Insurance,ASIA,Verify claim processing within SLA,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Claim processed successfully,,,
+2,REQ_2,TC_2,Claims Processing,Home Insurance,US,Check email notification upon claim approval,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Email notification sent successfully,,,
+3,REQ_3,TC_3,Policy Issuance,Travel Insurance,ANZ,Validate premium calculation based on risk factors,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Premium calculated correctly as per risk factors,,,
+4,REQ_4,TC_4,Claims Processing,Life Insurance,ASIA,Ensure correct document upload for policy approval,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Documents uploaded and verified successfully,,,
+5,REQ_5,TC_5,Policy Issuance,Commercial Insurance,US,Test multi-factor authentication during login,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",User successfully logged in with MFA,,,
+6,REQ_6,TC_6,Claims Processing,Cyber Insurance,ANZ,Verify policy cancellation process and refund calculation,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Policy cancelled and refund processed correctly,,,
+7,REQ_7,TC_7,Policy Issuance,Pet Insurance,ASIA,Confirm auto-renewal notification for upcoming policy expiration,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Auto-renewal notification sent successfully,,,
+8,REQ_8,TC_8,Claims Processing,Marine Insurance,US,Check fraud detection triggers during claim submission,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Fraud detected and claim flagged for review,,,
+9,REQ_9,TC_9,Policy Issuance,Agriculture Insurance,ANZ,Validate tax calculation for different policy types,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Tax calculated and applied correctly,,,
+10,REQ_10,TC_10,Claims Processing,Health Insurance,ASIA,Verify policy issuance with correct details,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Policy issued successfully,,,
+11,REQ_11,TC_11,Policy Issuance,Auto Insurance,US,Verify claim processing within SLA,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Claim processed successfully,,,
+12,REQ_12,TC_12,Claims Processing,Home Insurance,ANZ,Check email notification upon claim approval,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Email notification sent successfully,,,
+13,REQ_13,TC_13,Policy Issuance,Travel Insurance,ASIA,Validate premium calculation based on risk factors,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Premium calculated correctly as per risk factors,,,
+14,REQ_14,TC_14,Claims Processing,Life Insurance,US,Ensure correct document upload for policy approval,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Documents uploaded and verified successfully,,,
+15,REQ_15,TC_15,Policy Issuance,Commercial Insurance,ANZ,Test multi-factor authentication during login,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",User successfully logged in with MFA,,,
+16,REQ_16,TC_16,Claims Processing,Cyber Insurance,ASIA,Verify policy cancellation process and refund calculation,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Policy cancelled and refund processed correctly,,,
+17,REQ_17,TC_17,Policy Issuance,Pet Insurance,US,Confirm auto-renewal notification for upcoming policy expiration,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Auto-renewal notification sent successfully,,,
+18,REQ_18,TC_18,Claims Processing,Marine Insurance,ANZ,Check fraud detection triggers during claim submission,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Fraud detected and claim flagged for review,,,
+19,REQ_19,TC_19,Policy Issuance,Agriculture Insurance,ASIA,Validate tax calculation for different policy types,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Tax calculated and applied correctly,,,
+20,REQ_20,TC_20,Claims Processing,Health Insurance,US,Verify policy issuance with correct details,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Policy issued successfully,,,
+21,REQ_21,TC_21,Policy Issuance,Auto Insurance,ANZ,Verify claim processing within SLA,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Claim processed successfully,,,
+22,REQ_22,TC_22,Claims Processing,Home Insurance,ASIA,Check email notification upon claim approval,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Email notification sent successfully,,,
+23,REQ_23,TC_23,Policy Issuance,Travel Insurance,US,Validate premium calculation based on risk factors,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Premium calculated correctly as per risk factors,,,
+24,REQ_24,TC_24,Claims Processing,Life Insurance,ANZ,Ensure correct document upload for policy approval,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Documents uploaded and verified successfully,,,
+25,REQ_25,TC_25,Policy Issuance,Commercial Insurance,ASIA,Test multi-factor authentication during login,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",User successfully logged in with MFA,,,
+26,REQ_26,TC_26,Claims Processing,Cyber Insurance,US,Verify policy cancellation process and refund calculation,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Policy cancelled and refund processed correctly,,,
+27,REQ_27,TC_27,Policy Issuance,Pet Insurance,ANZ,Confirm auto-renewal notification for upcoming policy expiration,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Auto-renewal notification sent successfully,,,
+28,REQ_28,TC_28,Claims Processing,Marine Insurance,ASIA,Check fraud detection triggers during claim submission,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Fraud detected and claim flagged for review,,,
+29,REQ_29,TC_29,Policy Issuance,Agriculture Insurance,US,Validate tax calculation for different policy types,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Tax calculated and applied correctly,,,
+30,REQ_30,TC_30,Claims Processing,Health Insurance,ANZ,Verify policy issuance with correct details,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Policy issued successfully,,,
+31,REQ_31,TC_31,Policy Issuance,Auto Insurance,ASIA,Verify claim processing within SLA,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Claim processed successfully,,,
+32,REQ_32,TC_32,Claims Processing,Home Insurance,US,Check email notification upon claim approval,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Email notification sent successfully,,,
+33,REQ_33,TC_33,Policy Issuance,Travel Insurance,ANZ,Validate premium calculation based on risk factors,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Premium calculated correctly as per risk factors,,,
+34,REQ_34,TC_34,Claims Processing,Life Insurance,ASIA,Ensure correct document upload for policy approval,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Documents uploaded and verified successfully,,,
+35,REQ_35,TC_35,Policy Issuance,Commercial Insurance,US,Test multi-factor authentication during login,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",User successfully logged in with MFA,,,
+36,REQ_36,TC_36,Claims Processing,Cyber Insurance,ANZ,Verify policy cancellation process and refund calculation,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Policy cancelled and refund processed correctly,,,
+37,REQ_37,TC_37,Policy Issuance,Pet Insurance,ASIA,Confirm auto-renewal notification for upcoming policy expiration,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Auto-renewal notification sent successfully,,,
+38,REQ_38,TC_38,Claims Processing,Marine Insurance,US,Check fraud detection triggers during claim submission,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Fraud detected and claim flagged for review,,,
+39,REQ_39,TC_39,Policy Issuance,Agriculture Insurance,ANZ,Validate tax calculation for different policy types,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Tax calculated and applied correctly,,,
+40,REQ_40,TC_40,Claims Processing,Health Insurance,ASIA,Verify policy issuance with correct details,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Policy issued successfully,,,
+41,REQ_41,TC_41,Policy Issuance,Auto Insurance,US,Verify claim processing within SLA,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Claim processed successfully,,,
+42,REQ_42,TC_42,Claims Processing,Home Insurance,ANZ,Check email notification upon claim approval,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Email notification sent successfully,,,
+43,REQ_43,TC_43,Policy Issuance,Travel Insurance,ASIA,Validate premium calculation based on risk factors,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Premium calculated correctly as per risk factors,,,
+44,REQ_44,TC_44,Claims Processing,Life Insurance,US,Ensure correct document upload for policy approval,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Documents uploaded and verified successfully,,,
+45,REQ_45,TC_45,Policy Issuance,Commercial Insurance,ANZ,Test multi-factor authentication during login,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",User successfully logged in with MFA,,,
+46,REQ_46,TC_46,Claims Processing,Cyber Insurance,ASIA,Verify policy cancellation process and refund calculation,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Policy cancelled and refund processed correctly,,,
+47,REQ_47,TC_47,Policy Issuance,Pet Insurance,US,Confirm auto-renewal notification for upcoming policy expiration,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Auto-renewal notification sent successfully,,,
+48,REQ_48,TC_48,Claims Processing,Marine Insurance,ANZ,Check fraud detection triggers during claim submission,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Fraud detected and claim flagged for review,,,
+49,REQ_49,TC_49,Policy Issuance,Agriculture Insurance,ASIA,Validate tax calculation for different policy types,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Tax calculated and applied correctly,,,
+50,REQ_50,TC_50,Claims Processing,Health Insurance,US,Verify policy issuance with correct details,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Policy issued successfully,,,
+51,REQ_51,TC_51,Policy Issuance,Auto Insurance,ANZ,Verify claim processing within SLA,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Claim processed successfully,,,
+52,REQ_52,TC_52,Claims Processing,Home Insurance,ASIA,Check email notification upon claim approval,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Email notification sent successfully,,,
+53,REQ_53,TC_53,Policy Issuance,Travel Insurance,US,Validate premium calculation based on risk factors,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Premium calculated correctly as per risk factors,,,
+54,REQ_54,TC_54,Claims Processing,Life Insurance,ANZ,Ensure correct document upload for policy approval,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Documents uploaded and verified successfully,,,
+55,REQ_55,TC_55,Policy Issuance,Commercial Insurance,ASIA,Test multi-factor authentication during login,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",User successfully logged in with MFA,,,
+56,REQ_56,TC_56,Claims Processing,Cyber Insurance,US,Verify policy cancellation process and refund calculation,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Policy cancelled and refund processed correctly,,,
+57,REQ_57,TC_57,Policy Issuance,Pet Insurance,ANZ,Confirm auto-renewal notification for upcoming policy expiration,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Auto-renewal notification sent successfully,,,
+58,REQ_58,TC_58,Claims Processing,Marine Insurance,ASIA,Check fraud detection triggers during claim submission,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Fraud detected and claim flagged for review,,,
+59,REQ_59,TC_59,Policy Issuance,Agriculture Insurance,US,Validate tax calculation for different policy types,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Tax calculated and applied correctly,,,
+60,REQ_60,TC_60,Claims Processing,Health Insurance,ANZ,Verify policy issuance with correct details,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Policy issued successfully,,,
+61,REQ_61,TC_61,Policy Issuance,Auto Insurance,ASIA,Verify claim processing within SLA,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Claim processed successfully,,,
+62,REQ_62,TC_62,Claims Processing,Home Insurance,US,Check email notification upon claim approval,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Email notification sent successfully,,,
+63,REQ_63,TC_63,Policy Issuance,Travel Insurance,ANZ,Validate premium calculation based on risk factors,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Premium calculated correctly as per risk factors,,,
+64,REQ_64,TC_64,Claims Processing,Life Insurance,ASIA,Ensure correct document upload for policy approval,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Documents uploaded and verified successfully,,,
+65,REQ_65,TC_65,Policy Issuance,Commercial Insurance,US,Test multi-factor authentication during login,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",User successfully logged in with MFA,,,
+66,REQ_66,TC_66,Claims Processing,Cyber Insurance,ANZ,Verify policy cancellation process and refund calculation,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Policy cancelled and refund processed correctly,,,
+67,REQ_67,TC_67,Policy Issuance,Pet Insurance,ASIA,Confirm auto-renewal notification for upcoming policy expiration,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Auto-renewal notification sent successfully,,,
+68,REQ_68,TC_68,Claims Processing,Marine Insurance,US,Check fraud detection triggers during claim submission,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Fraud detected and claim flagged for review,,,
+69,REQ_69,TC_69,Policy Issuance,Agriculture Insurance,ANZ,Validate tax calculation for different policy types,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Tax calculated and applied correctly,,,
+70,REQ_70,TC_70,Claims Processing,Health Insurance,ASIA,Verify policy issuance with correct details,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Policy issued successfully,,,
+71,REQ_71,TC_71,Policy Issuance,Auto Insurance,US,Verify claim processing within SLA,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Claim processed successfully,,,
+72,REQ_72,TC_72,Claims Processing,Home Insurance,ANZ,Check email notification upon claim approval,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Email notification sent successfully,,,
+73,REQ_73,TC_73,Policy Issuance,Travel Insurance,ASIA,Validate premium calculation based on risk factors,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Premium calculated correctly as per risk factors,,,
+74,REQ_74,TC_74,Claims Processing,Life Insurance,US,Ensure correct document upload for policy approval,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Documents uploaded and verified successfully,,,
+75,REQ_75,TC_75,Policy Issuance,Commercial Insurance,ANZ,Test multi-factor authentication during login,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",User successfully logged in with MFA,,,
+76,REQ_76,TC_76,Claims Processing,Cyber Insurance,ASIA,Verify policy cancellation process and refund calculation,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Policy cancelled and refund processed correctly,,,
+77,REQ_77,TC_77,Policy Issuance,Pet Insurance,US,Confirm auto-renewal notification for upcoming policy expiration,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Auto-renewal notification sent successfully,,,
+78,REQ_78,TC_78,Claims Processing,Marine Insurance,ANZ,Check fraud detection triggers during claim submission,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Fraud detected and claim flagged for review,,,
+79,REQ_79,TC_79,Policy Issuance,Agriculture Insurance,ASIA,Validate tax calculation for different policy types,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Tax calculated and applied correctly,,,
+80,REQ_80,TC_80,Claims Processing,Health Insurance,US,Verify policy issuance with correct details,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Policy issued successfully,,,
+81,REQ_81,TC_81,Policy Issuance,Auto Insurance,ANZ,Verify claim processing within SLA,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Claim processed successfully,,,
+82,REQ_82,TC_82,Claims Processing,Home Insurance,ASIA,Check email notification upon claim approval,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Email notification sent successfully,,,
+83,REQ_83,TC_83,Policy Issuance,Travel Insurance,US,Validate premium calculation based on risk factors,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Premium calculated correctly as per risk factors,,,
+84,REQ_84,TC_84,Claims Processing,Life Insurance,ANZ,Ensure correct document upload for policy approval,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Documents uploaded and verified successfully,,,
+85,REQ_85,TC_85,Policy Issuance,Commercial Insurance,ASIA,Test multi-factor authentication during login,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",User successfully logged in with MFA,,,
+86,REQ_86,TC_86,Claims Processing,Cyber Insurance,US,Verify policy cancellation process and refund calculation,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Policy cancelled and refund processed correctly,,,
+87,REQ_87,TC_87,Policy Issuance,Pet Insurance,ANZ,Confirm auto-renewal notification for upcoming policy expiration,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Auto-renewal notification sent successfully,,,
+88,REQ_88,TC_88,Claims Processing,Marine Insurance,ASIA,Check fraud detection triggers during claim submission,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Fraud detected and claim flagged for review,,,
+89,REQ_89,TC_89,Policy Issuance,Agriculture Insurance,US,Validate tax calculation for different policy types,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Tax calculated and applied correctly,,,
+90,REQ_90,TC_90,Claims Processing,Health Insurance,ANZ,Verify policy issuance with correct details,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Policy issued successfully,,,
+91,REQ_91,TC_91,Policy Issuance,Auto Insurance,ASIA,Verify claim processing within SLA,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Claim processed successfully,,,
+92,REQ_92,TC_92,Claims Processing,Home Insurance,US,Check email notification upon claim approval,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Email notification sent successfully,,,
+93,REQ_93,TC_93,Policy Issuance,Travel Insurance,ANZ,Validate premium calculation based on risk factors,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Premium calculated correctly as per risk factors,,,
+94,REQ_94,TC_94,Claims Processing,Life Insurance,ASIA,Ensure correct document upload for policy approval,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Documents uploaded and verified successfully,,,
+95,REQ_95,TC_95,Policy Issuance,Commercial Insurance,US,Test multi-factor authentication during login,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",User successfully logged in with MFA,,,
+96,REQ_96,TC_96,Claims Processing,Cyber Insurance,ANZ,Verify policy cancellation process and refund calculation,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Policy cancelled and refund processed correctly,,,
+97,REQ_97,TC_97,Policy Issuance,Pet Insurance,ASIA,Confirm auto-renewal notification for upcoming policy expiration,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Auto-renewal notification sent successfully,,,
+98,REQ_98,TC_98,Claims Processing,Marine Insurance,US,Check fraud detection triggers during claim submission,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Fraud detected and claim flagged for review,,,
+99,REQ_99,TC_99,Policy Issuance,Agriculture Insurance,ANZ,Validate tax calculation for different policy types,"Step 1: Navigate to Policy Issuance screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Tax calculated and applied correctly,,,
+100,REQ_100,TC_100,Claims Processing,Health Insurance,ASIA,Verify policy issuance with correct details,"Step 1: Navigate to Claims Processing screen
+Step 2: Fill in required details
+Step 3: Submit and verify output",Policy issued successfully,,,
+101,REQ_NEW,TC_101,Commercial,Auto,Asia Pacific,"Here's a test case that meets the specified requirements:
+
+**Test Case:** TC-APC-001: Auto Insurance Quote for a Commercial Vehicle Fleet with Unusual Vehicle Types
+
+**Objective:** To validate that the system provides an accurate auto insurance quote for a commercial vehicle fleet with unusual vehicle types in the Asia Pacific region.
+
+**Preconditions:**
+
+* The user has a valid login credentials and is authorized to access the insurance portal.
+* The system is configured to support commercial auto insurance in the Asia Pacific region.
+
+**Test Steps:**
+
+1. Log in to the insurance portal as a commercial user.
+2. Navigate to the ""Get a Quote"" page and select ""Auto"" as the insurance type.
+3. Select ""Asia Pacific"" as the region.
+4. Choose ""Commercial"" as the line of business.
+5. Enter the following fleet details:
+	* Fleet size: 10 vehicles
+	* Vehicle types:
+		+ 3x amphibious vehicles (e.g., amphibious trucks)
+		+ 2x electric buses
+		+ 2x refrigerated trucks
+		+ 1x crane-mounted truck
+		+ 1x towing truck with a carrying capacity of 5 tons
+		+ 1x vintage car (1970s model) used for promotional events
+6. Enter the following details for each vehicle:
+	* Year of manufacture
+	* Make and model
+	* Vehicle identification number (VIN)
+	* Current mileage
+	* Driver information (name, age, driving experience, and license number)
+7. Enter the business information:
+	* Business name
+	* Business address
+	* Industry type (e.g., logistics, construction, tourism)
+8. Select the desired coverage options:
+	* Liability coverage: $1 million
+	* Collision coverage: $50,000
+	* Comprehensive coverage: $20,000
+	* Personal accident coverage: $500,000
+9. Click ""Get Quote"" to generate the insurance quote.
+
+**Expected Results:**
+
+1. The system should display a quote that includes the total premium amount, coverage details, and any applicable discounts or surcharges.
+2. The quote should accurately reflect the unusual vehicle types and their corresponding coverage requirements.
+3. The system should not throw any errors or exceptions due to the unusual vehicle types or large fleet size.
+
+**Edge Cases and Variations:**
+
+* Test with an even larger fleet size (e.g., 50 vehicles) to ensure the system can handle bulk inputs.
+* Try entering invalid or missing information for one or more vehicles (e.g., invalid VIN, missing driver information) to test error handling.
+* Select an extremely high coverage limit (e.g., $10 million) to test the system's upper bounds.
+* Test with a mix of old and new vehicles (e.g., 1960s model and 2022 model) to ensure the system can handle a wide range of vehicle ages.
+
+This test case covers unusual vehicle types, a large fleet size, and a mix of high-value and special-use vehicles, making it a unique and challenging test for the system.","Step 1: Navigate to the module.
+Step 2: Enter details.
+Step 3: Submit and verify.",Successfully processed.,,,
+102,REQ_NEW,TC_102,Commercial,Auto,Asia Pacific,"Here's a unique test case for Insurance Type: Auto, Region: Asia Pacific, Line of Business: Commercial, User Requirements: user can get auto insurance:
+
+**Test Case:** ""Overseas Vehicle Registration with Unconventional Vehicle Type""
+
+**Test Case Description:**
+
+Verify that the system allows a commercial auto insurance policy to be created for a vehicle with an overseas registration, unusual vehicle type, and non-standard engine specifications in the Asia Pacific region.
+
+**Preconditions:**
+
+1. The user has a valid login credentials and is authenticated to access the insurance platform.
+2. The user has selected the ""Asia Pacific"" region and ""Commercial"" line of business.
+3. The user has chosen ""Auto"" as the insurance type.
+
+**Test Steps:**
+
+1. The user initiates the commercial auto insurance policy creation process.
+2. The user selects ""Overseas"" as the vehicle registration type.
+3. The user enters the vehicle details:
+	* Vehicle type: ""Three-wheeled truck"" (an unusual but legitimate vehicle type in some Asia Pacific countries).
+	* Vehicle make: ""TATA"" (an Indian manufacturer popular in the Asia Pacific region).
+	* Vehicle model: ""Super Ace"" (a model known for its unusual design).
+	* Engine capacity: 800cc (a relatively small engine capacity).
+	* Year of manufacture: 2005 (an older vehicle).
+4. The user enters the business details:
+	* Business name: ""ABC Transport Co."" (a fictional company).
+	* Business type: ""Transportation"" (a common commercial use for three-wheeled trucks).
+5. The user provides additional information:
+	* Vehicle usage: ""Goods transportation"" (a common use for commercial vehicles).
+	* Annual mileage: 50,000 km (a moderate to high usage).
+6. The user submits the policy creation request.
+
+**Expected Results:**
+
+1. The system accepts the overseas vehicle registration and unusual vehicle type.
+2. The system calculates the premium based on the vehicle's unique characteristics and commercial usage.
+3. The system generates a policy document with the correct coverage details, including the vehicle's specifications, business details, and premium information.
+
+**Edge Cases and Variations:**
+
+* Invalid inputs:
+	+ Entering an invalid vehicle registration number or format.
+	+ Providing an engine capacity that is not a numeric value.
+* Extreme values:
+	+ Entering an extremely high annual mileage (e.g., 500,000 km).
+	+ Selecting an extremely old vehicle year of manufacture (e.g., 1960).
+* Unusual scenarios:
+	+ The vehicle has a non-standard engine specification (e.g., electric or hybrid).
+	+ The business has an unconventional use for the vehicle (e.g., food truck or mobile library).
+
+This test case covers edge cases and unusual scenarios that may not be commonly tested, ensuring the system's robustness and ability to handle diverse inputs and scenarios in the Asia Pacific region for commercial auto insurance.","Step 1: Navigate to the module.
+Step 2: Enter details.
+Step 3: Submit and verify.",Successfully processed.,,,
+103,REQ_NEW,TC_103,Retail,Auto,Asia Pacific,"Here's a test case for the Insurance Selection Process:
+
+Test Case: APAC Retail Auto Insurance Selection with Large File Upload and Error Handling
+
+Preconditions:
+
+ The user has access to the insurance selection system.
+ The system is configured to support Auto insurance type, Asia Pacific region, and Retail line of business.
+ The file upload functionality is enabled with a 200MB file size limit and supports TXT, CSV, and DOCX file formats.
+
+Test Steps:
+
+1. Invalid Insurance Type Selection
+	 Log in to the system and initiate the insurance selection process.
+	 Enter an invalid insurance type (e.g., ""Home"") and click Next.
+	 Verify that the system displays an error message indicating that the insurance type is not supported.
+2. Asia Pacific Region Selection with Special Characters
+	 Select the Auto insurance type and click Next.
+	 Enter ""Asia Pacific"" with special characters (e.g., ""Asia Paçific"") in the region dropdown and click Next.
+	 Verify that the system accepts the input and proceeds to the line of business selection step.
+3. Retail Line of Business Selection with Delay
+	 Select the Asia Pacific region and click Next.
+	 Wait for 30 seconds before selecting the Retail line of business.
+	 Verify that the system does not timeout and allows the user to proceed to the file upload step.
+4. Large File Upload (199MB)
+	 Select the Retail line of business and click Next.
+	 Upload a 199MB TXT file using the drag-and-drop feature.
+	 Verify that the system accepts the file and displays a success message.
+5. Unsupported File Format (PDF)
+	 Upload a 100KB PDF file using the browse feature.
+	 Verify that the system displays an error message indicating that the file format is not supported.
+6. File Size Exceeds Limit (201MB)
+	 Upload a 201MB CSV file using the drag-and-drop feature.
+	 Verify that the system displays an error message indicating that the file size exceeds the limit.
+7. Multiple File Uploads
+	 Upload two files: a 50KB DOCX file and a 150KB TXT file.
+	 Verify that the system accepts both files and displays a success message.
+8. Responsive Design
+	 Access the insurance selection system using a mobile device (e.g., iPhone) and a tablet device (e.g., iPad).
+	 Verify that the interface adapts to different screen sizes and devices, ensuring accessibility for all users.
+9. Browser Compatibility
+	 Access the insurance selection system using different web browsers (e.g., Chrome, Firefox, Safari, Edge).
+	 Verify that the system functions correctly and displays no errors or inconsistencies.
+
+Expected Results:
+
+ The system correctly handles invalid insurance type inputs and displays an error message.
+ The system accepts special characters in the region input and proceeds to the line of business selection step.
+ The system does not timeout during the line of business selection step, even with a delay.
+ The system accepts large files (up to 200MB) in supported formats (TXT, CSV, DOCX) and displays a success message.
+ The system displays error messages for unsupported file formats (e.g., PDF) and files exceeding the size limit (e.g., 201MB).
+ The system allows multiple file uploads and displays a success message.
+ The system's interface adapts to different screen sizes and devices, ensuring accessibility for all users.
+ The system functions correctly and displays no errors or inconsistencies across different web browsers.
+
+Edge Cases:
+
+ Testing with special characters in the region input (e.g., ""Asia Paçific"")
+ Testing with a delay during the line of business selection step
+ Testing with large files (up to 200MB) in supported formats
+ Testing with multiple file uploads
+ Testing with different web browsers and devices (e.g., mobile, tablet)","Step 1: Navigate to the module.
+Step 2: Enter details.
+Step 3: Submit and verify.",Successfully processed.,,,
+104,REQ_NEW,TC_104,Retail,Auto,Asia Pacific,"Here's a unique test case for the Insurance Type: Auto, Region: Asia Pacific, Line of Business: Retail, User Requirements:
+
+Test Case: ""Asian characters in file name and multiple file uploads with different extensions""
+
+Test Case ID: APACAutoRetail_001
+
+Objective: To validate the system's ability to handle files with Asian characters in the file name, multiple file uploads with different extensions, and error handling for invalid inputs.
+
+Preconditions:
+
+1. The user has a valid login credentials to access the insurance selection process.
+2. The user has a compatible web browser with a stable internet connection.
+
+Steps:
+
+1. Log in to the system as a valid user.
+2. Select ""Auto"" as the insurance type.
+3. Select ""Asia Pacific"" as the region.
+4. Select ""Retail"" as the line of business.
+5. Prepare three files with the following characteristics:
+	 File 1: ` JapaneseCharacters_ (Kanji).txt` (50KB)
+	 File 2: `ChineseCharacters_ (Simplified).csv` (150KB)
+	 File 3: `InvalidFile.exe` (250KB)
+6. Drag and drop File 1, File 2, and File 3 into the file upload area.
+7. Click on the ""Upload"" button.
+8. Verify that the system uploads File 1 and File 2 successfully and displays a confirmation message.
+9. Verify that the system rejects File 3 with an error message indicating that the file type is not supported.
+10. Attempt to proceed without making selections in any dropdowns and verify that the system displays a validation message.
+11. Verify that the system provides feedback on incomplete or erroneous actions prior to proceeding.
+
+Expected Results:
+
+1. The system displays a list of available insurance types, including Auto.
+2. The system displays a list of regions, including Asia Pacific.
+3. The system displays a list of lines of business, including Retail.
+4. The system successfully uploads File 1 and File 2 with Asian characters in the file name.
+5. The system rejects File 3 with an error message indicating that the file type is not supported.
+6. The system displays a validation message when attempting to proceed without making selections in any dropdowns.
+7. The system provides feedback on incomplete or erroneous actions prior to proceeding.
+
+Edge Cases:
+
+ Files with Asian characters in the file name
+ Multiple file uploads with different extensions (TXT, CSV, etc.)
+ Invalid file type (EXE) and size limit exceeding 200MB
+ Unusual file names with special characters
+
+Note: This test case covers the acceptance criteria for the insurance selection process, including file upload functionality, user interface, and validation messages. It also ensures that the system is responsive and accessible on different devices and browsers, with security measures in place to protect user data during file upload.","Step 1: Navigate to the module.
+Step 2: Enter details.
+Step 3: Submit and verify.",Successfully processed.,,,
+105,REQ_NEW,TC_105,Retail,Auto,Asia Pacific,"Here's a test case for the Insurance Selection Process:
+
+Test Case: APAC_Retail_Auto_Insurance_Selection_Process
+
+Preconditions:
+
+ The user has access to the insurance selection process portal.
+ The user is using a supported web browser.
+
+Test Steps:
+
+1. Insurance Type Selection
+	 Navigate to the insurance selection process portal.
+	 Verify that the list of available insurance types is displayed, including ""Auto"".
+	 Select ""Auto"" as the insurance type.
+	 Verify that only one insurance type can be selected at a time.
+	 Attempt to select multiple insurance types; verify that an error message is displayed.
+2. Region Selection
+	 After selecting ""Auto"" as the insurance type, verify that the list of regions is displayed.
+	 Select ""Asia Pacific"" as the region.
+	 Verify that no restrictions are applied to region selection.
+	 Attempt to select a non-existent region; verify that an error message is displayed.
+3. Line of Business Selection
+	 Post region selection, verify that the list of lines of business is displayed.
+	 Select ""Retail"" as the line of business.
+	 Verify that no restrictions are applied to line of business selection.
+	 Attempt to select a non-existent line of business; verify that an error message is displayed.
+4. File Upload Functionality
+	 Verify that the file upload area is visually distinct and provides clear instructions on how to upload files.
+	 Attempt to upload a file with a size of 201MB; verify that an error message is displayed.
+	 Attempt to upload a file in an unsupported format (e.g., PDF); verify that an error message is displayed.
+	 Upload a valid file (TXT, CSV, or DOCX) with a size of 199MB; verify that the file is successfully uploaded.
+	 Attempt to upload multiple files at once; verify that an error message is displayed.
+5. User Interface and Experience
+	 Verify that the interface clearly indicates the current selection at each step (insurance type, region, line of business).
+	 Verify that the file upload area dynamically indicates if a file is chosen or not.
+	 Verify that the interface is responsive and adaptable to different screen sizes and devices.
+6. Validation Messages
+	 Attempt to proceed without making selections in any dropdowns; verify that an appropriate validation message is displayed.
+	 Attempt to upload a file in an unsupported format or exceeding the size limit; verify that a clear error message is displayed.
+7. Feedback Mechanism
+	 Verify that a confirmation message is displayed upon successful completion of the selections and file upload.
+	 Verify that the system provides feedback if any action is incomplete or erroneous prior to proceeding.
+8. Responsive Design and Browser Compatibility
+	 Verify that the selection and upload interface adapts to different screen sizes and devices (desktop, tablet, mobile).
+	 Verify that the selection and upload interface is compatible with all supported web browsers.
+
+Edge Cases and Additional Scenarios:
+
+ Attempt to upload a file with a special character in the file name (e.g., !, @, #); verify that the file is successfully uploaded.
+ Attempt to upload a file with a long file name (e.g., 255 characters); verify that the file is successfully uploaded.
+ Attempt to upload a file with a non-English character in the file name (e.g., å, ü, è); verify that the file is successfully uploaded.
+ Verify that security measures are in place to protect user data during file upload.
+
+Expected Results:
+
+ The system displays a list of available insurance types, including ""Auto"".
+ The system allows the user to select ""Asia Pacific"" as the region and ""Retail"" as the line of business.
+ The system allows the user to upload files in supported formats (TXT, CSV, and DOCX) with a size limit of 200MB per file.
+ The system provides clear validation messages and feedback mechanisms throughout the selection process.
+ The system ensures that the selection and upload interface is responsive, adaptable, and compatible with all supported web browsers.","Step 1: Navigate to the module.
+Step 2: Enter details.
+Step 3: Submit and verify.",Successfully processed.,,,

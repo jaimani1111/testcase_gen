@@ -1,0 +1,173 @@
+import os
+import re
+import pandas as pd
+from dotenv import load_dotenv
+from groq import Groq
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.vectorstores import Chroma
+import streamlit as st
+from docx import Document
+from io import BytesIO
+
+# Load environment variables
+load_dotenv()
+
+# Initialize Groq client
+groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+
+# Initialize embeddings
+embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+
+# Initialize or load test bank
+try:
+    test_bank = pd.read_csv("test.csv")
+except FileNotFoundError:
+    test_bank = pd.DataFrame(columns=[
+        "Sl No.", "Requirement ID", "Test Case ID", "Module",
+        "LOB", "Region", "Test Case Description", "Execution Steps", "Expected Result"
+    ])
+
+# Initialize Chroma DB
+def initialize_chroma():
+    try:
+        # Try to load existing DB
+        return Chroma(
+            persist_directory="./chroma_db",
+            embedding_function=embeddings
+        )
+    except:
+        # Create new DB if doesn't exist
+        return create_embeddings()
+
+def create_embeddings():
+    """Create/update embeddings from test bank"""
+    # Chunk test cases
+    documents = []
+    for _, row in test_bank.iterrows():
+        documents.append(
+            f"LOB: {row['LOB']}\nRegion: {row['Region']}\n"
+            f"Description: {row['Test Case Description']}\n"
+            f"Steps: {row['Execution Steps']}\n"
+            f"Expected Result: {row['Expected Result']}"
+        )
+    
+    # Create vector store
+    return Chroma.from_texts(
+        documents,
+        embeddings,
+        persist_directory="./chroma_db"
+    )
+
+vector_db = initialize_chroma()
+
+# --- Streamlit App ---
+st.markdown("<h1 style='text-align: center;'>XC AI Test Case Generator</h1>", unsafe_allow_html=True)
+
+# Sidebar inputs
+with st.sidebar:
+    st.header("Parameters")
+    insurance_type = st.selectbox("Insurance Type", ["Health", "Auto", "Home", "Life", "Commercial"])
+    region = st.selectbox("Region", ["North America", "Europe", "Asia Pacific", "ANZ"])
+    line_of_business = st.selectbox("LOB", ["Retail", "Commercial", "Enterprise"])
+    
+    # File upload
+    criteria_file = st.file_uploader("Upload Requirements", type=["txt", "csv", "docx"])
+    
+    # Text input
+    manual_criteria = st.text_area("Or Enter Requirements Manually", height=150)
+    
+    if st.button("Generate Test Case"):
+        st.session_state.generate_clicked = True
+
+# Main processing
+if getattr(st.session_state, 'generate_clicked', False):
+    # Process input criteria
+    final_criteria = ""
+    if criteria_file:
+        if criteria_file.type == "text/plain":
+            final_criteria = criteria_file.getvalue().decode()
+        elif criteria_file.type == "text/csv":
+            df = pd.read_csv(criteria_file)
+            final_criteria = "\n".join(df.iloc[:, 0].astype(str))
+        elif criteria_file.type == "application/vnd.openxmlformats-officedocument.wordprocessingml.document":
+            doc = Document(criteria_file)
+            final_criteria = "\n".join([p.text for p in doc.paragraphs])
+    else:
+        final_criteria = manual_criteria
+
+    if final_criteria:
+        with st.spinner("Generating test case..."):
+            try:
+                # Generate with Groq
+                prompt = f"""Generate test case for:
+                - Insurance: {insurance_type}
+                - Region: {region}
+                - LOB: {line_of_business}
+                - Requirements: {final_criteria}
+                
+                Format:
+                - Sl No.: {len(test_bank)+1}
+                - Requirement ID: REQ_{insurance_type[:3].upper()}_{len(test_bank)+1:03}
+                - Test Case ID: TC_{line_of_business[:3].upper()}_{len(test_bank)+1:03}
+                - Module: [Underwriting|Claims|Policy Management]
+                - LOB: {line_of_business}
+                - Region: {region}
+                - Test Case Description: [1 sentence]
+                - Execution Steps: 
+                  1. [Step 1]
+                  2. [Step 2]
+                  3. [Step 3]
+                - Expected Result: [Specific outcome]"""
+
+                response = groq_client.chat.completions.create(
+                    messages=[{"role": "user", "content": prompt}],
+                    model="llama3-70b-8192"
+                )
+                generated_text = response.choices[0].message.content
+
+                # Parse response
+                parsed_case = {
+                    "Sl No.": len(test_bank) + 1,
+                    "Requirement ID": re.search(r"Requirement ID: (.+)", generated_text).group(1),
+                    "Test Case ID": re.search(r"Test Case ID: (.+)", generated_text).group(1),
+                    "Module": re.search(r"Module: (.+)", generated_text).group(1),
+                    "LOB": line_of_business,
+                    "Region": region,
+                    "Test Case Description": re.search(r"Test Case Description: (.+)", generated_text).group(1),
+                    "Execution Steps": re.search(r"Execution Steps:(.+?)Expected Result:", generated_text, re.DOTALL).group(1).strip(),
+                    "Expected Result": re.search(r"Expected Result: (.+)", generated_text).group(1)
+                }
+
+                # Update test bank
+                new_entry = pd.DataFrame([parsed_case])
+                updated_bank = pd.concat([test_bank, new_entry], ignore_index=True)
+                updated_bank.to_csv("test.csv", index=False)
+
+                # Update Chroma DB
+                vector_db.add_texts([generated_text])
+                vector_db.persist()
+
+                # Display results
+                st.success("✅ Test Case Generated")
+                st.dataframe(new_entry, hide_index=True)
+
+                # Download options
+                st.subheader("Download Options")
+                col1, col2 = st.columns(2)
+                
+                with col1:
+                    csv = new_entry.to_csv(index=False)
+                    st.download_button("CSV", csv, "test_case.csv", "text/csv")
+                
+                with col2:
+                    doc = Document()
+                    doc.add_heading("Test Case", 0)
+                    for key, value in parsed_case.items():
+                        doc.add_paragraph(f"{key}: {value}")
+                    bio = BytesIO()
+                    doc.save(bio)
+                    st.download_button("Word", bio.getvalue(), "test_case.docx", 
+                                     "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
+
+            except Exception as e:
+                st.error(f"Generation failed: {str(e)}")

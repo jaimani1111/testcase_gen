@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - TravelSure Broker Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#1B4E6B',
+                        'secondary': '#2A9D8F',
+                        'accent': '#E9C46A',
+                    }
+                }
+            }
+        }
+
+        // Check if user is logged in
+        window.onload = function() {
+            const brokerId = sessionStorage.getItem('brokerId');
+            if (!brokerId) {
+                window.location.href = 'login.html';
+                return;
+            }
+
+            // Update broker information
+            document.getElementById('brokerId').textContent = brokerId;
+            document.getElementById('brokerName').textContent = 
+                brokerId === 'BRK001' ? 'Broker 1' : 'Broker 2';
+        }
+
+        // Logout function
+        function logout() {
+            sessionStorage.removeItem('brokerId');
+            window.location.href = 'login.html';
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Top Navigation Bar -->
+    <nav class="bg-white shadow-sm fixed w-full z-10">
+        <div class="max-w-full px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-primary">TravelSure</span>
+                </div>
+                <!-- Global Search -->
+                <div class="flex-1 max-w-2xl px-8 py-2">
+                    <div class="relative flex items-center h-10">
+                        <div class="flex-1">
+                            <input type="text" placeholder="Search quotes, policies, or customers..." 
+                                   class="w-full h-full px-4 py-2 pl-10 pr-4 rounded-lg border border-gray-300 focus:outline-none focus:border-primary">
+                            <div class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
+                        <button class="ml-2 h-full px-4 bg-primary text-white rounded-lg hover:bg-primary/90 transition duration-300">
+                            Search
+                        </button>
+                    </div>
+                </div>
+                <!-- User Profile & Notifications -->
+                <div class="flex items-center space-x-6">
+                    <div class="relative">
+                        <div class="relative">
+                            <button onclick="toggleNotifications()" class="text-gray-600 hover:text-primary">
+                                <i class="fas fa-bell text-xl"></i>
+                                <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">0</span>
+                            </button>
+                            <!-- Notifications Dropdown -->
+                            <div id="notificationsDropdown" class="hidden absolute right-0 mt-2 w-80 bg-white rounded-xl shadow-lg z-50">
+                                <div class="p-4 border-b border-gray-100">
+                                    <h3 class="text-lg font-semibold">Notifications</h3>
+                                </div>
+                                <div class="p-2">
+                                    <div class="text-center text-gray-500 py-4">
+                                        No new notifications
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://ui-avatars.com/api/?name=Broker" alt="Profile" class="w-8 h-8 rounded-full">
+                        <div>
+                            <span class="text-gray-700" id="brokerName">Broker</span>
+                            <span class="text-xs text-gray-500 block" id="brokerId">BRK001</span>
+                        </div>
+                        <button onclick="logout()" class="text-gray-600 hover:text-primary ml-4">
+                            <i class="fas fa-sign-out-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="pt-16 flex">
+        <!-- Sidebar -->
+        <aside class="w-64 fixed h-full bg-white shadow-sm">
+            <div class="p-4 space-y-4">
+                <a href="#" class="flex items-center space-x-2 text-primary">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="flex items-center space-x-2 text-gray-600 hover:text-primary">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Quotes</span>
+                </a>
+                <a href="#" class="flex items-center space-x-2 text-gray-600 hover:text-primary">
+                    <i class="fas fa-users"></i>
+                    <span>Customers</span>
+                </a>
+                <a href="#" class="flex items-center space-x-2 text-gray-600 hover:text-primary">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Reports</span>
+                </a>
+                <a href="#" class="flex items-center space-x-2 text-gray-600 hover:text-primary">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="ml-64 flex-1 p-8">
+            <!-- Header with Create Quote Button -->
+            <div class="flex justify-between items-center mb-8">
+                <h1 class="text-2xl font-bold text-gray-800">Dashboard</h1>
+            <button id="createQuoteBtn" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition duration-300">
+                <i class="fas fa-plus mr-2"></i> Create Quote
+            </button>
+            </div>
+
+            <!-- Stats Overview -->
+            <div class="grid grid-cols-4 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-gray-500">Total Quotes</p>
+                            <h3 class="text-2xl font-bold">0</h3>
+                        </div>
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-file-alt text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-gray-500">Active Policies</p>
+                            <h3 class="text-2xl font-bold">0</h3>
+                        </div>
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check-circle text-green-600"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-gray-500">Pending Approval</p>
+                            <h3 class="text-2xl font-bold">0</h3>
+                        </div>
+                        <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-clock text-yellow-600"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-gray-500">Total Customers</p>
+                            <h3 class="text-2xl font-bold">0</h3>
+                        </div>
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-users text-blue-600"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recently Accessed Quotes -->
+            <div class="bg-white rounded-xl shadow-sm mb-8">
+                <div class="p-6 border-b border-gray-200">
+                    <h2 class="text-xl font-semibold">Recently Accessed Quotes/Policies</h2>
+                </div>
+                <div class="p-6">
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full">
+                            <thead>
+                                <tr class="text-left text-gray-500">
+                                    <th class="pb-4">Quote ID</th>
+                                    <th class="pb-4">Customer</th>
+                                    <th class="pb-4">Destination</th>
+                                    <th class="pb-4">Status</th>
+                                    <th class="pb-4">Premium</th>
+                                    <th class="pb-4">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-gray-600">
+                                <tr class="border-t">
+                                    <td class="py-4">#QT-2025001</td>
+                                    <td class="py-4">Rahul Sharma</td>
+                                    <td class="py-4">Delhi → Ladakh</td>
+                                    <td class="py-4"><span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Pending</span></td>
+                                    <td class="py-4">₹2,500</td>
+                                    <td class="py-4">
+                                        <button class="text-primary hover:text-primary/80"><i class="fas fa-edit"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tasks and Notifications Grid -->
+            <div class="grid grid-cols-2 gap-8">
+                <!-- Tasks Section -->
+                    <div class="bg-white rounded-xl shadow-sm">
+                        <div class="p-6 border-b border-gray-200">
+                            <h2 class="text-xl font-semibold">Tasks</h2>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-center text-gray-500 py-4">
+                                No pending tasks
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Notifications Section -->
+                    <div class="bg-white rounded-xl shadow-sm">
+                        <div class="p-6 border-b border-gray-200">
+                            <h2 class="text-xl font-semibold">Notifications</h2>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-center text-gray-500 py-4">
+                                No new notifications
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Quote Generation Modal -->
+    <div id="quoteModal" class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full">
+        <div class="relative top-20 mx-auto p-5 border w-3/4 shadow-lg rounded-xl bg-white">
+            <div class="flex justify-between items-center border-b pb-4">
+                <h3 class="text-xl font-semibold">Generate New Quote</h3>
+                <button onclick="toggleQuoteModal()" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form id="quoteForm" class="mt-6">
+                <!-- Customer Details -->
+                <div class="mb-6">
+                    <h4 class="text-lg font-medium mb-4">Customer Details</h4>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Full Name</label>
+                            <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-primary" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Age</label>
+                            <input type="number" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-primary" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-primary" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Phone</label>
+                            <input type="tel" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-primary" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Travel Details -->
+                <div class="mb-6">
+                    <h4 class="text-lg font-medium mb-4">Travel Details</h4>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Trip Type</label>
+                            <select class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-primary" required>
+                                <option value="single">Single Trip</option>
+                                <option value="multiple">Multiple Trips</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">City of Travel</label>
+                            <div class="relative">
+                                <select class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-primary appearance-none bg-white" required>
+                                    <option value="">Select a city</option>
+                                    <option value="delhi">Delhi</option>
+                                    <option value="mumbai">Mumbai</option>
+                                    <option value="bangalore">Bangalore</option>
+                                    <option value="chennai">Chennai</option>
+                                    <option value="kolkata">Kolkata</option>
+                                    <option value="hyderabad">Hyderabad</option>
+                                    <option value="pune">Pune</option>
+                                    <option value="ahmedabad">Ahmedabad</option>
+                                    <option value="jaipur">Jaipur</option>
+                                    <option value="lucknow">Lucknow</option>
+                                    <option value="kochi">Kochi</option>
+                                    <option value="goa">Goa</option>
+                                    <option value="shimla">Shimla</option>
+                                    <option value="manali">Manali</option>
+                                    <option value="ladakh">Ladakh</option>
+                                    <option value="srinagar">Srinagar</option>
+                                    <option value="varanasi">Varanasi</option>
+                                    <option value="udaipur">Udaipur</option>
+                                    <option value="jodhpur">Jodhpur</option>
+                                    <option value="amritsar">Amritsar</option>
+                                </select>
+                                <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                                    <i class="fas fa-chevron-down text-gray-400"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Trip Start Date</label>
+                            <input type="date" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-primary" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Trip End Date</label>
+                            <input type="date" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-primary" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Number of Travelers</label>
+                            <input type="number" min="1" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-primary" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coverage Options -->
+                <div class="mb-6">
+                    <h4 class="text-lg font-medium mb-4">Coverage Options</h4>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Coverage Type</label>
+                            <select class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-primary" required>
+                                <option value="basic">Basic</option>
+                                <option value="comprehensive">Comprehensive</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Add-ons</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded text-primary">
+                                    <span>Flight Delay Coverage</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded text-primary">
+                                    <span>Lost Luggage Protection</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded text-primary">
+                                    <span>High Risk Activities (Scuba, Skydiving)</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded text-primary">
+                                    <span>Hijack Coverage</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded text-primary">
+                                    <span>Natural Disaster Protection</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Actions -->
+                <div class="flex justify-end space-x-4 mt-8">
+                    <button type="button" onclick="toggleQuoteModal()" 
+                            class="px-6 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">
+                        Cancel
+                    </button>
+                    <button type="submit" 
+                            class="px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary/90">
+                        Generate Quote
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Toggle notifications dropdown
+        function toggleNotifications() {
+            const dropdown = document.getElementById('notificationsDropdown');
+            dropdown.classList.toggle('hidden');
+        }
+
+        // Close notifications when clicking outside
+        window.onclick = function(event) {
+            if (!event.target.matches('.fa-bell') && !event.target.matches('#notificationsDropdown')) {
+                const dropdown = document.getElementById('notificationsDropdown');
+                if (!dropdown.classList.contains('hidden')) {
+                    dropdown.classList.add('hidden');
+                }
+            }
+        }
+
+        // Toggle quote modal
+        function toggleQuoteModal() {
+            const modal = document.getElementById('quoteModal');
+            modal.classList.toggle('hidden');
+        }
+
+        // Add event listeners when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Handle Create Quote button click
+            document.getElementById('createQuoteBtn').addEventListener('click', toggleQuoteModal);
+        });
+
+        // Handle quote form submission
+        document.getElementById('quoteForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add quote generation logic here
+            toggleQuoteModal();
+        });
+    </script>
+</body>
+</html>
