@@ -1,0 +1,401 @@
+Sl No.,Requirement ID,Test Case ID,Module,LOB,Region,Test Case Description,Execution Steps,Expected Result
+1,REQ_1001,TC_5001,Policy Issuance,Car,EMEA,Verify Policy Issuance functionality for Car insurance in EMEA.,"1. Navigate to Policy Issuance module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+2,REQ_1002,TC_5002,Renewals,Travel,Europe,Verify Renewals functionality for Travel insurance in Europe.,"1. Navigate to Renewals module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+3,REQ_1003,TC_5003,Customer Service,Health,America,Verify Customer Service functionality for Health insurance in America.,"1. Navigate to Customer Service module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+4,REQ_1004,TC_5004,Risk Assessment,Flood,Asia Pacific,Verify Risk Assessment functionality for Flood insurance in Asia Pacific.,"1. Navigate to Risk Assessment module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+5,REQ_1005,TC_5005,Claims Processing,Life,AU/NZ,Verify Claims Processing functionality for Life insurance in AU/NZ.,"1. Navigate to Claims Processing module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+6,REQ_1006,TC_5006,Policy Issuance,Auto,EMEA,Verify Policy Issuance functionality for Auto insurance in EMEA.,"1. Navigate to Policy Issuance module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+7,REQ_1007,TC_5007,Renewals,Car,Europe,Verify Renewals functionality for Car insurance in Europe.,"1. Navigate to Renewals module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+8,REQ_1008,TC_5008,Customer Service,Travel,America,Verify Customer Service functionality for Travel insurance in America.,"1. Navigate to Customer Service module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+9,REQ_1009,TC_5009,Risk Assessment,Health,Asia Pacific,Verify Risk Assessment functionality for Health insurance in Asia Pacific.,"1. Navigate to Risk Assessment module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+10,REQ_1010,TC_5010,Claims Processing,Flood,AU/NZ,Verify Claims Processing functionality for Flood insurance in AU/NZ.,"1. Navigate to Claims Processing module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+11,REQ_1011,TC_5011,Policy Issuance,Life,EMEA,Verify Policy Issuance functionality for Life insurance in EMEA.,"1. Navigate to Policy Issuance module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+12,REQ_1012,TC_5012,Renewals,Auto,Europe,Verify Renewals functionality for Auto insurance in Europe.,"1. Navigate to Renewals module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+13,REQ_1013,TC_5013,Customer Service,Car,America,Verify Customer Service functionality for Car insurance in America.,"1. Navigate to Customer Service module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+14,REQ_1014,TC_5014,Risk Assessment,Travel,Asia Pacific,Verify Risk Assessment functionality for Travel insurance in Asia Pacific.,"1. Navigate to Risk Assessment module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+15,REQ_1015,TC_5015,Claims Processing,Health,AU/NZ,Verify Claims Processing functionality for Health insurance in AU/NZ.,"1. Navigate to Claims Processing module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+16,REQ_1016,TC_5016,Policy Issuance,Flood,EMEA,Verify Policy Issuance functionality for Flood insurance in EMEA.,"1. Navigate to Policy Issuance module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+17,REQ_1017,TC_5017,Renewals,Life,Europe,Verify Renewals functionality for Life insurance in Europe.,"1. Navigate to Renewals module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+18,REQ_1018,TC_5018,Customer Service,Auto,America,Verify Customer Service functionality for Auto insurance in America.,"1. Navigate to Customer Service module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+19,REQ_1019,TC_5019,Risk Assessment,Car,Asia Pacific,Verify Risk Assessment functionality for Car insurance in Asia Pacific.,"1. Navigate to Risk Assessment module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+20,REQ_1020,TC_5020,Claims Processing,Travel,AU/NZ,Verify Claims Processing functionality for Travel insurance in AU/NZ.,"1. Navigate to Claims Processing module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+21,REQ_1021,TC_5021,Policy Issuance,Health,EMEA,Verify Policy Issuance functionality for Health insurance in EMEA.,"1. Navigate to Policy Issuance module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+22,REQ_1022,TC_5022,Renewals,Flood,Europe,Verify Renewals functionality for Flood insurance in Europe.,"1. Navigate to Renewals module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+23,REQ_1023,TC_5023,Customer Service,Life,America,Verify Customer Service functionality for Life insurance in America.,"1. Navigate to Customer Service module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+24,REQ_1024,TC_5024,Risk Assessment,Auto,Asia Pacific,Verify Risk Assessment functionality for Auto insurance in Asia Pacific.,"1. Navigate to Risk Assessment module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+25,REQ_1025,TC_5025,Claims Processing,Car,AU/NZ,Verify Claims Processing functionality for Car insurance in AU/NZ.,"1. Navigate to Claims Processing module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+26,REQ_1026,TC_5026,Policy Issuance,Travel,EMEA,Verify Policy Issuance functionality for Travel insurance in EMEA.,"1. Navigate to Policy Issuance module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+27,REQ_1027,TC_5027,Renewals,Health,Europe,Verify Renewals functionality for Health insurance in Europe.,"1. Navigate to Renewals module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+28,REQ_1028,TC_5028,Customer Service,Flood,America,Verify Customer Service functionality for Flood insurance in America.,"1. Navigate to Customer Service module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+29,REQ_1029,TC_5029,Risk Assessment,Life,Asia Pacific,Verify Risk Assessment functionality for Life insurance in Asia Pacific.,"1. Navigate to Risk Assessment module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+30,REQ_1030,TC_5030,Claims Processing,Auto,AU/NZ,Verify Claims Processing functionality for Auto insurance in AU/NZ.,"1. Navigate to Claims Processing module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+31,REQ_1031,TC_5031,Policy Issuance,Car,EMEA,Verify Policy Issuance functionality for Car insurance in EMEA.,"1. Navigate to Policy Issuance module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+32,REQ_1032,TC_5032,Renewals,Travel,Europe,Verify Renewals functionality for Travel insurance in Europe.,"1. Navigate to Renewals module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+33,REQ_1033,TC_5033,Customer Service,Health,America,Verify Customer Service functionality for Health insurance in America.,"1. Navigate to Customer Service module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+34,REQ_1034,TC_5034,Risk Assessment,Flood,Asia Pacific,Verify Risk Assessment functionality for Flood insurance in Asia Pacific.,"1. Navigate to Risk Assessment module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+35,REQ_1035,TC_5035,Claims Processing,Life,AU/NZ,Verify Claims Processing functionality for Life insurance in AU/NZ.,"1. Navigate to Claims Processing module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+36,REQ_1036,TC_5036,Policy Issuance,Auto,EMEA,Verify Policy Issuance functionality for Auto insurance in EMEA.,"1. Navigate to Policy Issuance module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+37,REQ_1037,TC_5037,Renewals,Car,Europe,Verify Renewals functionality for Car insurance in Europe.,"1. Navigate to Renewals module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+38,REQ_1038,TC_5038,Customer Service,Travel,America,Verify Customer Service functionality for Travel insurance in America.,"1. Navigate to Customer Service module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+39,REQ_1039,TC_5039,Risk Assessment,Health,Asia Pacific,Verify Risk Assessment functionality for Health insurance in Asia Pacific.,"1. Navigate to Risk Assessment module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+40,REQ_1040,TC_5040,Claims Processing,Flood,AU/NZ,Verify Claims Processing functionality for Flood insurance in AU/NZ.,"1. Navigate to Claims Processing module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+41,REQ_1041,TC_5041,Policy Issuance,Life,EMEA,Verify Policy Issuance functionality for Life insurance in EMEA.,"1. Navigate to Policy Issuance module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+42,REQ_1042,TC_5042,Renewals,Auto,Europe,Verify Renewals functionality for Auto insurance in Europe.,"1. Navigate to Renewals module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+43,REQ_1043,TC_5043,Customer Service,Car,America,Verify Customer Service functionality for Car insurance in America.,"1. Navigate to Customer Service module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+44,REQ_1044,TC_5044,Risk Assessment,Travel,Asia Pacific,Verify Risk Assessment functionality for Travel insurance in Asia Pacific.,"1. Navigate to Risk Assessment module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+45,REQ_1045,TC_5045,Claims Processing,Health,AU/NZ,Verify Claims Processing functionality for Health insurance in AU/NZ.,"1. Navigate to Claims Processing module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+46,REQ_1046,TC_5046,Policy Issuance,Flood,EMEA,Verify Policy Issuance functionality for Flood insurance in EMEA.,"1. Navigate to Policy Issuance module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+47,REQ_1047,TC_5047,Renewals,Life,Europe,Verify Renewals functionality for Life insurance in Europe.,"1. Navigate to Renewals module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+48,REQ_1048,TC_5048,Customer Service,Auto,America,Verify Customer Service functionality for Auto insurance in America.,"1. Navigate to Customer Service module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+49,REQ_1049,TC_5049,Risk Assessment,Car,Asia Pacific,Verify Risk Assessment functionality for Car insurance in Asia Pacific.,"1. Navigate to Risk Assessment module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+50,REQ_1050,TC_5050,Claims Processing,Travel,AU/NZ,Verify Claims Processing functionality for Travel insurance in AU/NZ.,"1. Navigate to Claims Processing module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+51,REQ_1051,TC_5051,Policy Issuance,Health,EMEA,Verify Policy Issuance functionality for Health insurance in EMEA.,"1. Navigate to Policy Issuance module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+52,REQ_1052,TC_5052,Renewals,Flood,Europe,Verify Renewals functionality for Flood insurance in Europe.,"1. Navigate to Renewals module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+53,REQ_1053,TC_5053,Customer Service,Life,America,Verify Customer Service functionality for Life insurance in America.,"1. Navigate to Customer Service module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+54,REQ_1054,TC_5054,Risk Assessment,Auto,Asia Pacific,Verify Risk Assessment functionality for Auto insurance in Asia Pacific.,"1. Navigate to Risk Assessment module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+55,REQ_1055,TC_5055,Claims Processing,Car,AU/NZ,Verify Claims Processing functionality for Car insurance in AU/NZ.,"1. Navigate to Claims Processing module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+56,REQ_1056,TC_5056,Policy Issuance,Travel,EMEA,Verify Policy Issuance functionality for Travel insurance in EMEA.,"1. Navigate to Policy Issuance module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+57,REQ_1057,TC_5057,Renewals,Health,Europe,Verify Renewals functionality for Health insurance in Europe.,"1. Navigate to Renewals module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+58,REQ_1058,TC_5058,Customer Service,Flood,America,Verify Customer Service functionality for Flood insurance in America.,"1. Navigate to Customer Service module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+59,REQ_1059,TC_5059,Risk Assessment,Life,Asia Pacific,Verify Risk Assessment functionality for Life insurance in Asia Pacific.,"1. Navigate to Risk Assessment module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+60,REQ_1060,TC_5060,Claims Processing,Auto,AU/NZ,Verify Claims Processing functionality for Auto insurance in AU/NZ.,"1. Navigate to Claims Processing module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+61,REQ_1061,TC_5061,Policy Issuance,Car,EMEA,Verify Policy Issuance functionality for Car insurance in EMEA.,"1. Navigate to Policy Issuance module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+62,REQ_1062,TC_5062,Renewals,Travel,Europe,Verify Renewals functionality for Travel insurance in Europe.,"1. Navigate to Renewals module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+63,REQ_1063,TC_5063,Customer Service,Health,America,Verify Customer Service functionality for Health insurance in America.,"1. Navigate to Customer Service module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+64,REQ_1064,TC_5064,Risk Assessment,Flood,Asia Pacific,Verify Risk Assessment functionality for Flood insurance in Asia Pacific.,"1. Navigate to Risk Assessment module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+65,REQ_1065,TC_5065,Claims Processing,Life,AU/NZ,Verify Claims Processing functionality for Life insurance in AU/NZ.,"1. Navigate to Claims Processing module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+66,REQ_1066,TC_5066,Policy Issuance,Auto,EMEA,Verify Policy Issuance functionality for Auto insurance in EMEA.,"1. Navigate to Policy Issuance module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+67,REQ_1067,TC_5067,Renewals,Car,Europe,Verify Renewals functionality for Car insurance in Europe.,"1. Navigate to Renewals module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+68,REQ_1068,TC_5068,Customer Service,Travel,America,Verify Customer Service functionality for Travel insurance in America.,"1. Navigate to Customer Service module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+69,REQ_1069,TC_5069,Risk Assessment,Health,Asia Pacific,Verify Risk Assessment functionality for Health insurance in Asia Pacific.,"1. Navigate to Risk Assessment module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+70,REQ_1070,TC_5070,Claims Processing,Flood,AU/NZ,Verify Claims Processing functionality for Flood insurance in AU/NZ.,"1. Navigate to Claims Processing module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+71,REQ_1071,TC_5071,Policy Issuance,Life,EMEA,Verify Policy Issuance functionality for Life insurance in EMEA.,"1. Navigate to Policy Issuance module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+72,REQ_1072,TC_5072,Renewals,Auto,Europe,Verify Renewals functionality for Auto insurance in Europe.,"1. Navigate to Renewals module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+73,REQ_1073,TC_5073,Customer Service,Car,America,Verify Customer Service functionality for Car insurance in America.,"1. Navigate to Customer Service module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+74,REQ_1074,TC_5074,Risk Assessment,Travel,Asia Pacific,Verify Risk Assessment functionality for Travel insurance in Asia Pacific.,"1. Navigate to Risk Assessment module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+75,REQ_1075,TC_5075,Claims Processing,Health,AU/NZ,Verify Claims Processing functionality for Health insurance in AU/NZ.,"1. Navigate to Claims Processing module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+76,REQ_1076,TC_5076,Policy Issuance,Flood,EMEA,Verify Policy Issuance functionality for Flood insurance in EMEA.,"1. Navigate to Policy Issuance module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+77,REQ_1077,TC_5077,Renewals,Life,Europe,Verify Renewals functionality for Life insurance in Europe.,"1. Navigate to Renewals module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+78,REQ_1078,TC_5078,Customer Service,Auto,America,Verify Customer Service functionality for Auto insurance in America.,"1. Navigate to Customer Service module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+79,REQ_1079,TC_5079,Risk Assessment,Car,Asia Pacific,Verify Risk Assessment functionality for Car insurance in Asia Pacific.,"1. Navigate to Risk Assessment module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+80,REQ_1080,TC_5080,Claims Processing,Travel,AU/NZ,Verify Claims Processing functionality for Travel insurance in AU/NZ.,"1. Navigate to Claims Processing module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+81,REQ_1081,TC_5081,Policy Issuance,Health,EMEA,Verify Policy Issuance functionality for Health insurance in EMEA.,"1. Navigate to Policy Issuance module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+82,REQ_1082,TC_5082,Renewals,Flood,Europe,Verify Renewals functionality for Flood insurance in Europe.,"1. Navigate to Renewals module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+83,REQ_1083,TC_5083,Customer Service,Life,America,Verify Customer Service functionality for Life insurance in America.,"1. Navigate to Customer Service module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+84,REQ_1084,TC_5084,Risk Assessment,Auto,Asia Pacific,Verify Risk Assessment functionality for Auto insurance in Asia Pacific.,"1. Navigate to Risk Assessment module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+85,REQ_1085,TC_5085,Claims Processing,Car,AU/NZ,Verify Claims Processing functionality for Car insurance in AU/NZ.,"1. Navigate to Claims Processing module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+86,REQ_1086,TC_5086,Policy Issuance,Travel,EMEA,Verify Policy Issuance functionality for Travel insurance in EMEA.,"1. Navigate to Policy Issuance module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+87,REQ_1087,TC_5087,Renewals,Health,Europe,Verify Renewals functionality for Health insurance in Europe.,"1. Navigate to Renewals module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+88,REQ_1088,TC_5088,Customer Service,Flood,America,Verify Customer Service functionality for Flood insurance in America.,"1. Navigate to Customer Service module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+89,REQ_1089,TC_5089,Risk Assessment,Life,Asia Pacific,Verify Risk Assessment functionality for Life insurance in Asia Pacific.,"1. Navigate to Risk Assessment module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+90,REQ_1090,TC_5090,Claims Processing,Auto,AU/NZ,Verify Claims Processing functionality for Auto insurance in AU/NZ.,"1. Navigate to Claims Processing module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+91,REQ_1091,TC_5091,Policy Issuance,Car,EMEA,Verify Policy Issuance functionality for Car insurance in EMEA.,"1. Navigate to Policy Issuance module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+92,REQ_1092,TC_5092,Renewals,Travel,Europe,Verify Renewals functionality for Travel insurance in Europe.,"1. Navigate to Renewals module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+93,REQ_1093,TC_5093,Customer Service,Health,America,Verify Customer Service functionality for Health insurance in America.,"1. Navigate to Customer Service module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+94,REQ_1094,TC_5094,Risk Assessment,Flood,Asia Pacific,Verify Risk Assessment functionality for Flood insurance in Asia Pacific.,"1. Navigate to Risk Assessment module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+95,REQ_1095,TC_5095,Claims Processing,Life,AU/NZ,Verify Claims Processing functionality for Life insurance in AU/NZ.,"1. Navigate to Claims Processing module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+96,REQ_1096,TC_5096,Policy Issuance,Auto,EMEA,Verify Policy Issuance functionality for Auto insurance in EMEA.,"1. Navigate to Policy Issuance module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+97,REQ_1097,TC_5097,Renewals,Car,Europe,Verify Renewals functionality for Car insurance in Europe.,"1. Navigate to Renewals module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+98,REQ_1098,TC_5098,Customer Service,Travel,America,Verify Customer Service functionality for Travel insurance in America.,"1. Navigate to Customer Service module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+99,REQ_1099,TC_5099,Risk Assessment,Health,Asia Pacific,Verify Risk Assessment functionality for Health insurance in Asia Pacific.,"1. Navigate to Risk Assessment module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
+100,REQ_1100,TC_5100,Claims Processing,Flood,AU/NZ,Verify Claims Processing functionality for Flood insurance in AU/NZ.,"1. Navigate to Claims Processing module.
+2. Input sample data.
+3. Submit request.
+4. Verify system response.",The system should process the request successfully without errors.
