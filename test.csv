@@ -588,3 +588,231 @@ Expected Results:
  The system ensures that the selection and upload interface is responsive, adaptable, and compatible with all supported web browsers.","Step 1: Navigate to the module.
 Step 2: Enter details.
 Step 3: Submit and verify.",Successfully processed.,,,
+106,REQ_NEW,TC_106,Retail,Auto,Asia Pacific,"Here is a new test case that covers edge cases and extreme values for the Auto Insurance policy purchase in the Asia Pacific region:
+
+Test Case:
+
+- Sl No.: 1
+- Requirement ID: BR-001, FAC-001, FAC-002, FAC-003, FAC-004, FAC-005, NAC-001, NAC-002, NAC-003, EC-001, EC-002, EC-003
+- Test Case ID: APAC-001
+- Module: Auto Insurance Policy Purchase
+- LOB: Retail
+- Region: Asia Pacific
+- Test Case Description: Test the auto insurance policy purchase with an extreme value for vehicle year and invalid VIN input.
+- Execution Steps:
+  1. Launch the auto insurance policy purchase module on a mobile device.
+  2. Enter an extreme value for the vehicle year (e.g., 1900).
+  3. Enter an invalid VIN (e.g., ""InvalidVIN123"").
+  4. Click on the ""Get Quote"" button.
+  5. Verify the error message displayed for the invalid VIN.
+  6. Correct the VIN to a valid one (e.g., ""JHMGY14UXKC005111"").
+  7. Select the coverage options (e.g., Comprehensive, Third-Party).
+  8. Proceed to payment and select the payment mode (e.g., Credit Card).
+  9. Enter the payment details and submit the payment.
+  10. Verify the policy document generated upon successful payment.
+  11. Verify the confirmation email and SMS received.
+- Expected Result:
+  1. The system should display an error message for the invalid VIN.
+  2. The system should allow the user to correct the VIN and proceed with the policy purchase.
+  3. The system should generate a policy document upon successful payment.
+  4. The system should send a confirmation email and SMS to the user.
+
+Edge Case Coverage:
+
+ Invalid vehicle VIN input (EC-001)
+ Extreme value for vehicle year (EC-003)
+ Payment processing and retry (EC-002)
+
+This test case covers the business requirement of seamless policy purchase, functional acceptance criteria for vehicle details, coverage options, payment processing, and policy document generation. It also covers non-functional acceptance criteria for performance and responsiveness. Additionally, it tests edge cases for invalid VIN input and extreme values for vehicle year.","Step 1: Navigate to module.
+Step 2: Enter details.
+Step 3: Submit and verify.",Successfully processed.,,,
+107,REQ_NEW,TC_107,Commercial,Auto,North America,"Here is a new test case for the given requirements:
+
+Sl No.: 1
+Requirement ID: VD-001
+Test Case ID: VD-001-NA-COM-001
+Module: Auto Insurance Policy Purchase
+LOB: Commercial
+Region: North America
+Test Case Description: Test Vehicle Details Entry with Extreme Values and Special Characters
+Execution Steps:
+
+1. Log in to the auto insurance policy purchase page as a commercial user in North America.
+2. Enter the following vehicle details:
+	 Make: ""TOYOTA123"" (with numbers and uppercase letters)
+	 Model: ""CAMRY_XLE"" (with underscore and uppercase letters)
+	 Year: ""2022"" (latest model year)
+	 VIN: ""1HGCM82633A1234567"" (with an extra digit at the end)
+3. Click the ""Next"" button to proceed to the next step of fetching the insurance premium.
+
+Expected Result:
+
+ The system should accept the input without any error messages.
+ The user should be able to proceed to the next step of fetching the insurance premium.
+ The system should trim any extra characters from the VIN and store it correctly.
+
+Edge Cases Covered:
+
+ Using a mix of uppercase and lowercase letters in the Make and Model fields.
+ Including numbers in the Make field.
+ Using special characters (underscore) in the Model field.
+ Entering a VIN with an extra digit at the end.
+ Testing with the latest model year (2022) to ensure the system can handle current data.
+
+This test case covers edge cases that are specific to the North American region and commercial line of business, ensuring that the system can handle a variety of inputs and extreme values.","1. Navigate to module.
+2. Enter details.
+3. Submit and verify.",Successfully processed.,,,
+108,REQ_NEW,TC_108,Retail,Auto,North America,"This enhanced prompt is well-structured and provides clear guidelines for generating a unique and robust test case. Here are some key takeaways:
+
+1. Specificity: The prompt ensures that the generated test case is specific to the user's inputs (insurance type, region, and line of business) and avoids generic test cases.
+2. Uniqueness: The similarity search is used to provide context, but the generated test case must be completely new and not present in the test bank, avoiding duplication.
+3. Edge cases and extreme values: The prompt emphasizes the importance of considering real-world scenarios, edge cases, and extreme conditions, including invalid inputs, unexpected user behaviors, boundary values, and system failures or performance issues.
+4. Structured format: The test case format is clearly defined, ensuring clarity and consistency in the generated test case.
+5. Context from similar test cases: The prompt provides context from similar test cases in the test bank, but still requires the generated test case to be entirely distinct and new.
+
+To generate a test case based on this prompt, I would need to fill in the template with the required information. Here is an example test case:
+
+Test Case:
+
+| Sl No. | Requirement ID | Test Case ID | Module | LOB | Region | Test Case Description | Execution Steps | Expected Result |
+|--------|--------------|--------------|--------|-----|--------|----------------------|----------------|----------------|
+| 1 | TC001 | TC001 | Policy Management | Retail | North America | Test that the system correctly calculates premiums for auto insurance policies in North America, considering regional-specific requirements and regulations. | 1. Create a new auto insurance policy in North America. <br> 2. Enter invalid input for the policyholder's address. <br> 3. Observe the system's response. | The system should display an error message indicating the invalid input and prevent the policy from being created. |
+
+Please note that this is just an example, and the generated test case should be entirely new and distinct from existing test cases in the test bank.","1. Navigate to module.
+2. Enter details.
+3. Submit and verify.",Successfully processed.,,,
+109,REQ_NEW,TC_109,Enterprise,Auto,North America,"Here are three new test cases for the ""Test Vehicle Details Entry"" story:
+
+Test Case 1: Invalid VIN length
+
+Given: A user is on the auto insurance policy purchase page.
+When: The user enters the following vehicle details:
+Make: ""Ford""
+Model: ""Mustang""
+Year: ""2019""
+VIN: ""123456"" (shorter than the standard 17-character VIN)
+Then: The system should display an error message ""Invalid VIN length. Please enter a valid 17-character VIN number."" and prevent the user from proceeding to the next step.
+
+Test Case 2: Non-existent Vehicle Model
+
+Given: A user is on the auto insurance policy purchase page.
+When: The user enters the following vehicle details:
+Make: ""Tesla""
+Model: ""Galactic"" (non-existent model)
+Year: ""2022""
+VIN: ""1HGCM82633A123456""
+Then: The system should display an error message ""Invalid vehicle model. Please enter a valid model for the selected make."" and prevent the user from proceeding to the next step.
+
+Test Case 3: Year outside of supported range
+
+Given: A user is on the auto insurance policy purchase page.
+When: The user enters the following vehicle details:
+Make: ""Chevrolet""
+Model: ""Silverado""
+Year: ""1965"" (outside of the supported range of 1981-2025)
+VIN: ""1HGCM82633A123456""
+Then: The system should display an error message ""Invalid vehicle year. Please enter a year between 1981 and 2025."" and prevent the user from proceeding to the next step.
+
+These test cases cover edge cases such as invalid inputs (short VIN, non-existent model) and extreme values (year outside of supported range). By testing these scenarios, we can ensure that the system handles invalid inputs and provides clear error messages to the user.","1. Navigate to module.
+2. Enter details.
+3. Submit and verify.",Successfully processed.,,,
+110,REQ_NEW,TC_110,Commercial,Auto,Europe,"Here is a new test case for the specified requirements:
+
+Sl No.: 1
+Requirement ID: Req-001
+Test Case ID: TC-001
+Module: Auto Insurance Policy Purchase
+LOB: Commercial
+Region: Europe
+Test Case Description: Test Vehicle Details Entry with Special Characters in Model Name
+
+Execution Steps:
+
+1. Launch the auto insurance policy purchase page.
+2. Enter the following vehicle details:
+	 Make: ""Toyota""
+	 Model: ""Camry-Special Edition""
+	 Year: ""2020""
+	 VIN: ""1HGCM82633A123456""
+3. Click on the ""Next"" button to proceed to the next step.
+4. Observe the system's response.
+
+Expected Result: The system accepts the input without any error messages, and the user is able to proceed to the next step of fetching the insurance premium. The model name with special characters (""Camry-Special Edition"") is accepted and does not throw any errors.
+
+Edge Case: This test case covers the scenario where the model name contains special characters, which is a common occurrence in European markets.","1. Navigate to module.
+2. Enter details.
+3. Submit and verify.",Successfully processed.,,,
+111,REQ_NEW,TC_111,Commercial,Auto,Europe,"Here is a completely new test case for the given requirements:
+
+Test Case:
+
+- Sl No.: 1
+- Requirement ID: AUT-001
+- Test Case ID: AUT-001-001
+- Module: Auto Insurance Policy Purchase
+- LOB: Commercial
+- Region: Europe
+- Test Case Description: Test Vehicle Details Entry with Non-Standard Characters in VIN
+- Execution Steps:
+  1. A user is on the auto insurance policy purchase page.
+  2. The user enters the following valid vehicle details:
+    - Make: ""McLaren""
+    - Model: ""720S""
+    - Year: ""2019""
+    - VIN: ""JH4KA#B86@L000001"" (VIN contains non-standard characters # and @)
+  3. Click the ""Next"" button to proceed to the next step.
+- Expected Result: The system should accept the input without any error messages, and the user should be able to proceed to the next step of fetching the insurance premium.
+
+This test case covers an edge case scenario where the VIN contains non-standard characters, which may be present in some European vehicle identification numbers. This test case ensures that the system can handle such unusual inputs correctly.","Step 1: Navigate to the module.
+Step 2: Enter details.
+Step 3: Submit and verify.",Successfully processed.,,,
+112,REQ_NEW,TC_112,Retail,Auto,Europe,"Here is a new and unique test case for the given requirements:
+
+**Sl No.**: 1
+**Requirement ID**: RD001
+**Test Case ID**: TC001.5
+**Module**: Insurance Policy Purchase
+**LOB**: Retail
+**Region**: Europe
+**Test Case Description**: Test Vehicle Details Entry with Special Characters in Make and Model
+**Execution Steps**:
+
+1. The user navigates to the auto insurance policy purchase page.
+2. The user enters the following vehicle details:
+	* Make: ""Toyöta"" (with an umlaut character)
+	* Model: ""Ca_mry"" (with an underscore character)
+	* Year: ""2020""
+	* VIN: ""1HGCM82633A123456""
+3. The user clicks the ""Next"" button to proceed to the next step.
+**Expected Result**: The system should accept the input without any error messages and the user should be able to proceed to the next step of fetching the insurance premium.
+
+This test case covers a unique scenario where special characters are entered in the make and model fields, which might not be commonly tested. It ensures that the system can handle such inputs correctly and doesn't throw any errors.
+
+Let me know if you'd like me to generate more test cases!","1. Navigate to the system
+2. Enter required inputs
+3. Submit and verify results",System should process the input successfully,,,
+113,REQ_NEW,TC_113,Retail,Auto,Asia Pacific,"Here is a new test case:
+
+Test Case:
+
+- Sl No.: 101
+- Requirement ID: REQ-AP-001
+- Test Case ID: TC-AUTO-AP-RET-003
+- Module: Auto Insurance Policy Purchase
+- LOB: Retail
+- Region: Asia Pacific
+- Test Case Description: Test Vehicle Details Entry with Optional Features
+- Execution Steps:
+  1. Launch the auto insurance policy purchase page.
+  2. Enter the following valid vehicle details:
+     - Make: ""Honda""
+     - Model: ""Civic""
+     - Year: ""2018""
+     - VIN: ""JHMFC16508S001234""
+     - Optional Features: Sunroof, Navigation System
+  3. Click the ""Next"" button to proceed to the next step.
+- Expected Result: The system should accept the input without any error messages, and the user should be able to proceed to the next step of fetching the insurance premium with the optional features considered in the calculation.
+
+Note: This test case is different from the provided cases as it tests the input of optional features along with the basic vehicle details.","Step 1: Navigate to the module.
+Step 2: Enter details.
+Step 3: Submit and verify.",Successfully processed.,,,
